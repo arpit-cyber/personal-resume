@@ -1,0 +1,229 @@
+
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    line-height: 1.7;
+}
+
+/* Header section */
+.hero {
+    background: linear-gradient(135deg, #0f172a, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 17px;
+    color: #dbeafe;
+    margin-bottom: 20px;
+}
+
+/* Contact links in header */
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 18px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.contact a:hover {
+    background-color: white;
+    color: #1d4ed8;
+}
+
+/* Main content layout */
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* Individual resume sections */
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
+}
+
+.card h2 {
+    color: #1d4ed8;
+    font-size: 23px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+.card h3 {
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card a {
+    color: #2563eb;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Education table */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+}
+
+th {
+    background-color: #1d4ed8;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eff6ff;
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+}
+
+.skills-list li {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Projects */
+.project {
+    background-color: #f8fafc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.project:last-child {
+    margin-bottom: 0;
+}
+
+/* Hobbies and achievements */
+.card ul:not(.skills-list) {
+    padding-left: 24px;
+}
+
+.hobbies-list li,
+#achievements li {
+    margin-bottom: 6px;
+}
+
+/* Footer */
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 18px;
+        margin-bottom: 16px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .contact {
+        gap: 8px;
+    }
+
+    .contact a {
+        padding: 7px 12px;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
